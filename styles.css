@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*, 
+*::before,
+*::after {
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .2s;
+
+}
+
+:root {
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body { 
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container, .submitted-container {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 25rem;
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 2em;
+}
+.main-container img {
+    background-color: hsl(217, 11%, 23%);
+    padding: .8rem;
+    border-radius: 50%;
+}
+p {
+    font-size: 15px;
+    line-height: 1.5rem;
+
+}
+.submit-btn {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 2.8rem;
+    letter-spacing: .2rem;
+}
+input:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    
+}
+.btn {
+    background-color: hsl(210, 10%, 20%);
+    color: var(--light-grey);
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+p, li{
+    color: var(--dark-grey);
+}
+h1, h2, input {
+    color: var(--white)
+}
+.submitted-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.submitted-container p {
+    text-align: center;
+}
+.hidden { 
+    display: none;
+}
+.submit-btn, .btn {
+    cursor: pointer;
+}
