@@ -1,7 +1,7 @@
 const mainContainer = document.querySelector(".main-container")
 const thankYou = document.querySelector(".submitted-container")
 const submitBtn = document.querySelector("input")
-const rateBtn = document.querySelector(".btn")
+const rateBtn = document.getElementsByClassName(".btn")
 
 
 submitBtn.addEventListener("click", () => {
@@ -9,5 +9,6 @@ submitBtn.addEventListener("click", () => {
         mainContainer.style.display = "none";
     })
 
+    
 
 
