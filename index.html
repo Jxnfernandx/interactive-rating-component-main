@@ -29,11 +29,11 @@
         to help us improve our offering!</p>
 
       <ul id="buttons">
-        <li><button class="btn">1</button></li>
-        <li><button class="btn">2</button></li>
-        <li><button class="btn">3</button></li>
-        <li><button class="btn">4</button></li>
-        <li><button class="btn">5</button></li>
+        <li><button class="btn" value="1">1</button></li>
+        <li><button class="btn" value="2">2</button></li>
+        <li><button class="btn" value="3">3</button></li>
+        <li><button class="btn" value="4">4</button></li>
+        <li><button class="btn" value="5">5</button></li>
       </ul>
 
       <input class="submit-btn" type="button" value="submit"></input>
@@ -47,7 +47,9 @@
    <div class="submitted-container hidden">
     <img src="./images/illustration-thank-you.svg" 
          alt="picture of phone with receipt">
-    You selected out of 5
+    <div class="rating">
+      You selected <span id="user-rating">0</span> out of 5
+    </div>
 
     <h2>Thank you!</h2>
   
